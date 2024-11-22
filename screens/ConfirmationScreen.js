@@ -1,9 +1,11 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
+//Confirmation Screen 
+//Nevigation back to the Checkin Screen
 const ConfirmationScreen = ({ navigation }) => {
   const handleMainScreen = () => {
-    navigation.navigate('CheckIn'); // Navigate back to the main screen
+    navigation.navigate('CheckIn'); // Navigate back to the CheckIn Screen
   };
 
   return (
@@ -22,7 +24,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#FAF9F6', // Light beige background
+    backgroundColor: '#FAF9F6', 
     paddingHorizontal: 20,
   },
   title: {
@@ -37,7 +39,7 @@ const styles = StyleSheet.create({
     marginBottom: 40,
   },
   button: {
-    backgroundColor: '#D3D3D3', // Light gray button
+    backgroundColor: '#D3D3D3', 
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 8,

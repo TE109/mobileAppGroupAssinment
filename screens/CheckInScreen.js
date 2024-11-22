@@ -1,10 +1,11 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-
+//Checkin screen
+//Link to VisitorInScreen
 const CheckInScreen = ({ navigation }) => {
   const handleVisitAppointment = () => {
-    // Navigate to the Visit/Appointment screen or handle logic
+    // Navigate to the Visit/Appointment screen
     navigation.navigate('VisitorInScreen');
   };
 
@@ -12,19 +13,21 @@ const CheckInScreen = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={styles.title}>Check-In</Text>
       <Text style={styles.subtitle}>What brings you in today?</Text>
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('VisitorIn')}>
+      <TouchableOpacity style={styles.button} onPress={
+        () => navigation.navigate('VisitorIn')}>  /*To nevigate to VistorIn */
         <Text style={styles.buttonText}>Visit/Appointment</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
+//Styles for checkin screen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#FAF9F6', // Matching the light beige color
+    backgroundColor: '#FAF9F6', 
   },
   title: {
     fontSize: 28,
@@ -37,7 +40,7 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   button: {
-    backgroundColor: '#D3D3D3', // Light gray color for the button
+    backgroundColor: '#D3D3D3', 
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 8,
